@@ -28,4 +28,9 @@ public class MainActivity extends AppCompatActivity {
         sendBroadcast(intent);
     }
 
+    public void sendOrderBroadcast(View view){
+//        sendBroadcast(new Intent("com.sven.action.my.receiver.orderd.receiver"));
+        sendOrderedBroadcast(new Intent("com.sven.action.my.receiver.ordered.receiver"), null);
+    }
+
 }
